@@ -1,0 +1,18 @@
+.partners{
+    padding-bottom: 87px;
+    background: #FAFAFA;
+    &__block{
+        padding: 50px 0;
+        min-height: 75px;
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        grid-template-rows: 75px;
+        grid-auto-rows: 75px;
+    }
+    &__item{
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

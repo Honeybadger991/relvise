@@ -1,0 +1,131 @@
+.promo{
+    padding-bottom: 191px;
+    background: url('../../img/promo_bg.png') center center / cover no-repeat;
+    &__wrapper{
+        position: relative;
+    }
+    &__header{
+        padding: 36px 0;
+        display: flex;
+        align-items: center;
+        gap: 132px;
+    }
+    &__logo{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.33;
+        letter-spacing: 0.1px;
+        color: $t-first-color;
+        text-decoration: none;
+    }
+    &__menu{
+        display: flex;
+        list-style-type: none;
+        gap: 21px;
+        &-item{
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.71;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $t-second-color;
+                &:hover{
+                    color: $o-first-color;
+                }
+            }
+        }
+    }
+    &__title{
+        width: 400px;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 1.38;
+        letter-spacing: 0.2px;
+        color: $t-first-color;
+    }
+    &__subtitle{
+        padding-top: 35px;
+        width: 390px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        color: $t-second-color;
+    }
+    &__buttons{
+        padding-top: 35px;
+        display: flex;
+        gap: 10px;
+    }
+    &__btn{
+        padding: 10px 36px;
+        border-radius: 37px;
+        background: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2.0;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $t-first-color;
+        border: 1px solid $o-first-color;
+        cursor: pointer;
+        transition: 0.4s all;
+        &:hover{
+            color: #FFFFFF;
+            border: none;
+            background: $o-second-color;
+            border: none;
+        }
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 242px;
+        column-gap: 30px;
+        position: absolute;
+        left: 0%;
+        top: 114%;
+        &-item{
+            padding: 35px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #FFFFFF;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            transition: 0.4s all;
+            &:hover{
+                cursor: pointer;
+                background: $o-first-color;
+                .promo__block-item-name{
+                    color:#FFFFFF;
+                }
+                .promo__block-item-descr{
+                    color:#FFFFFF;
+                }
+                svg path{
+                    fill: #FFFFFF;
+                }
+            }
+            &-icon{
+                width: 50px;
+                height: 50px;
+            }
+            &-name{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.33;
+                letter-spacing: 0.1px;
+                color: $t-first-color;
+            }
+            &-descr{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.43;
+                letter-spacing: 0.2px;
+                color: $t-second-color;
+            }
+        }
+    }
+}

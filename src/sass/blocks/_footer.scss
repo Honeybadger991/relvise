@@ -1,0 +1,23 @@
+.footer{
+    background: #FAFAFA;
+    &__wrapper{
+        padding: 25px 0 25px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.2px;
+        color: $t-second-color;
+    }
+    &__socials{
+        display: flex;
+        gap: 20px;
+        &-item{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
